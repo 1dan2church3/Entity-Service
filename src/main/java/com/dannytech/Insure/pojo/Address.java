@@ -18,12 +18,6 @@ public class Address {
 	private Long address_id;
 	private String streetAddress;
 	@ManyToOne
-	@JoinColumn(name = "city_id")
-	private City city;
-	@ManyToOne
-	@JoinColumn(name = "state_id")
-	private State state;
-	@ManyToOne
 	@JoinColumn(name = "zip_id")
 	private Zip zip;
 }
