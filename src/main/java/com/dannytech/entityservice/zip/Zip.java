@@ -1,17 +1,17 @@
-package com.dannytech.Insure.pojo;
-
-import java.util.List;
+package com.dannytech.entityservice.zip;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.Data;
 
 @Entity
 @Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Zip {
 
 	@Id
@@ -20,6 +20,4 @@ public class Zip {
 	private String code;
 	private String state;
 	private String city;
-	@OneToMany(mappedBy = "zip")
-	private List<Address> address;
 }

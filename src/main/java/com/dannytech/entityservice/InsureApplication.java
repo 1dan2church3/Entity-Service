@@ -1,4 +1,4 @@
-package com.dannytech.Insure;
+package com.dannytech.entityservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
